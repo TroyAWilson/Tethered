@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://by0hous0yow14"
+path="res://.godot/imported/laserLarge_002.ogg-9f5a345ac6d982f11217917b6ecd636d.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sci-fi audio/laserLarge_002.ogg"
+dest_files=["res://.godot/imported/laserLarge_002.ogg-9f5a345ac6d982f11217917b6ecd636d.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://8gjwarut2t3v"
+path="res://.godot/imported/spaceEngineSmall_002.ogg-bc393d4a7cb5a2131f19027bb6ed3755.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sci-fi audio/spaceEngineSmall_002.ogg"
+dest_files=["res://.godot/imported/spaceEngineSmall_002.ogg-bc393d4a7cb5a2131f19027bb6ed3755.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

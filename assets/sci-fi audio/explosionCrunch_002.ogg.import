@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://c3m6egsym3o08"
+path="res://.godot/imported/explosionCrunch_002.ogg-cf0d9228a62b6c515fda3963c8a64fa8.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sci-fi audio/explosionCrunch_002.ogg"
+dest_files=["res://.godot/imported/explosionCrunch_002.ogg-cf0d9228a62b6c515fda3963c8a64fa8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

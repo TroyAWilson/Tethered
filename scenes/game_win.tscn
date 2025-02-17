@@ -1,0 +1,60 @@
+[gd_scene load_steps=2 format=3 uid="uid://cc8rtkr6weh2g"]
+
+[ext_resource type="Script" path="res://scripts/game_win.gd" id="1_24oap"]
+
+[node name="Game Win" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_24oap")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -361.0
+offset_top = -165.0
+offset_right = 365.0
+offset_bottom = 50.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -48.0
+offset_top = -39.5
+offset_right = 20.0
+offset_bottom = -16.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "You Win!"
+
+[node name="restart" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 244.0
+offset_top = 120.0
+offset_right = 316.0
+offset_bottom = 151.0
+text = "Restart?"
+
+[node name="quit" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 120.0
+offset_right = 432.0
+offset_bottom = 151.0
+text = "Quit?"
+
+[connection signal="pressed" from="Panel/restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Panel/quit" to="." method="_on_quit_pressed"]
