@@ -12,6 +12,8 @@ var firstLanding = false
 @onready var gc := $Grapple
 
 func _physics_process(delta: float) -> void:
+
+	
 	if is_on_floor() and not firstLanding:
 		firstLanding = true
 		gravityAcc = 0.8
@@ -31,6 +33,15 @@ func _physics_process(delta: float) -> void:
 	# Get the input direction and handle the movement/deceleration.
 	# As good practice, you should replace UI actions with custom gameplay actions.
 	var direction := Input.get_axis("move_left", "move_right")
+	if direction and is_on_floor():
+		$AnimatedSprite2D.play('walk')
+	else:
+		$AnimatedSprite2D.play("idle")
+	
+	if direction > 0:
+		$AnimatedSprite2D.flip_h = false
+	elif direction < 0:
+		$AnimatedSprite2D.flip_h = true
 	
 	if direction:
 		velocity.x = lerp(velocity.x, SPEED * direction, ACCELERATION)

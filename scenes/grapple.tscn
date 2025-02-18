@@ -9,5 +9,7 @@ script = ExtResource("1_r04ut")
 target_position = Vector2(800, 0)
 
 [node name="Line2D" type="Line2D" parent="."]
+z_index = -4
 points = PackedVector2Array(0, 0, 0, 0)
-default_color = Color(0.411765, 0.188235, 0, 1)
+width = 3.0
+default_color = Color(0, 0.988235, 0.898039, 1)
