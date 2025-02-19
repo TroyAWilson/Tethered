@@ -1,5 +1,8 @@
 extends Label
 
+#This code should be made into a class or reusable component of some kind because
+# it's redundant wit the other Label code.
+
 var onscreen := false
 	
 func _process(delta: float) -> void:

@@ -1,0 +1,53 @@
+[gd_scene load_steps=2 format=3 uid="uid://cyrw0cobthc3h"]
+
+[ext_resource type="Script" path="res://scripts/game_over.gd" id="1_a7r7i"]
+
+[node name="Game Over" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_a7r7i")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -132.0
+offset_right = 320.0
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="Label" parent="Panel"]
+layout_mode = 0
+offset_left = 280.0
+offset_top = 24.0
+offset_right = 367.0
+offset_bottom = 47.0
+text = "Game Over"
+
+[node name="quit" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 88.0
+offset_right = 456.0
+offset_bottom = 128.0
+text = "Quit"
+
+[node name="restart" type="Button" parent="Panel"]
+layout_mode = 0
+offset_left = 224.0
+offset_top = 88.0
+offset_right = 312.0
+offset_bottom = 128.0
+text = "Restart"
+
+[connection signal="pressed" from="Panel/quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="Panel/restart" to="." method="_on_restart_pressed"]
