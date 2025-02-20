@@ -17,6 +17,8 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("grapple"):
 		launch()
+		
+		
 	if Input.is_action_just_released("grapple"):
 		release()
 		
@@ -27,6 +29,7 @@ func _process(delta: float) -> void:
 func launch():
 	if ray.is_colliding():
 		launched = true
+		$AudioStreamPlayer2D.play()
 		target = ray.get_collision_point()
 		if ray.get_collider() in get_tree().get_nodes_in_group("grapple_targets"):
 			closest_node = ray.get_collider()
