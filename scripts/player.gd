@@ -4,7 +4,7 @@ const SPEED = 300.0
 const JUMP_VELOCITY = -400.0
 const ACCELERATION = 0.1
 const DECELERATION = 0.1
-var gravityAcc := 1.0 # 0-1 is low gravity
+var gravityAcc := 0.1 # 0-1 is low gravity
 var firstLanding = false
 
 
@@ -12,8 +12,6 @@ var firstLanding = false
 @onready var gc := $Grapple
 
 func _physics_process(delta: float) -> void:
-
-	
 	if is_on_floor() and not firstLanding:
 		firstLanding = true
 		gravityAcc = 0.8

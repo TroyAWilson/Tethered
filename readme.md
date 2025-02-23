@@ -8,6 +8,7 @@ Music/Sound
 
 - [Dreamy Space Soundtrack by Chiphead64](https://chiphead64.itch.io/dreamy-space-soundtrack)
 
+- [RPG Essentials SFX Free by Leohpaz](https://leohpaz.itch.io/rpg-essentials-sfx-free)
 
 Art
 
@@ -21,4 +22,7 @@ Art
 
 - [Pixel Art Space Shooter Kit by Helianthus Games](https://helianthus-games.itch.io/pixel-art-space-shooter-kit)
 
-- [RPG Essentials SFX Free by Leohpaz](https://leohpaz.itch.io/rpg-essentials-sfx-free)
+
+- [Four Retro Computer Sprites by Nightspore](https://nightspore.itch.io/four-retro-computer-sprites)
+
+- [Crosshair Pack by Kenney](https://kenney-assets.itch.io/crosshair-pack)
